@@ -1,0 +1,48 @@
+
+a{
+    text-decoration:none;
+    color:white;
+}
+.Book{
+    display:flex;
+    flex-direction:row;
+    background-color:black;
+    width: auto;
+    height:75px;
+    border-radius: 5px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2) ;
+}
+.BookStore{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:150px;
+
+}
+ 
+.login{
+    width: 35%;
+    margin: 50px auto;
+    padding: 50px;
+}
+#log{
+    margin-left: 150px;
+}
+#username{
+    width: 300px;
+}
+#pass{
+    width: 305px;
+}
+.categories{
+    display:flex;
+    flex-direction:row;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    margin-top:auto;
+    margin-bottom:auto
+}
+.Visit{
+width: 35%;
+ margin: 25pxFinal Project AA;
+}
