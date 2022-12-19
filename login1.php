@@ -18,16 +18,16 @@ if(isset($_POST['username'])){
     $uname = $_POST['username'];
     $pass = $_POST['password'];
 
-    $sql = "insert into website(`id`, `username`, `password`) values (NULL, '".$uname."', '".$pass."')";
+    $sql = "select * from website where username = '".$uname."' AND password = '".$pass."' limit 1";
 
     $result = mysqli_query($link, $sql);
 
-    if($result){
-        echo "Success!";
+    if(mysqli_num_rows($result) == 1){
+        echo "Logged IN!";
         exit();
     }
     else{
-        echo "Wrong!";
+        echo "Wrong data!";
     }
 }
 ?>
