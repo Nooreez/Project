@@ -102,9 +102,13 @@
     $("address").slideUp();
     function cityover(x){
         var text=x.title;
+        x.style.height="350px";
+        x.style.width="400px";
         document.getElementById("visit").innerHTML=text;
     }
     function cityout(x){
+        x.style.height="250px";
+        x.style.width="300px";
         document.getElementById("visit").innerHTML="Visit Us";
     }
     function imageover(x){
