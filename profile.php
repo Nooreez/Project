@@ -12,13 +12,11 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div>
-    <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg" width="100" alt="">
-        <h2 style="margin: 10px 0"><?=  $_SESSION['user']['email'] ?></h2>
-        <a href="#"><?= $_SESSION['user']['email'] ?></a>
-        <a href="/logout.php" class="logout">Exit</a>
-
+<body style="background-color:lightyellow">
+    <div style="margin-left:50%;margin-right:50%;text-align:center;">
+        <img style="margin-left:25px" src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg" width="100" alt="">
+            <a style="margin:50px;" href="/HomePage.html">Home</a>
+            <a href="/logout.php" class="logout">Exit</a>
     </div>
 </body>
 </html>
