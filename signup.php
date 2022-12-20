@@ -16,7 +16,8 @@ include 'connect.php';
     mysqli_query($connect,"INSERT INTO `users` (`id`, `full_name`, `login`, `email`, `password`,  `avatar`) VALUES (' ', '".$full_name."', '".$login."', '".$email."', '".$password."', NULL)");
     $_SESSION['message'] = 'registration was successful';
     header('Location: /index.php');
-  }else{
+  }
+  else{
     $_SESSION['message'] = 'passwords dont match';
     header('Location: /register.php');
      

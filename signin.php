@@ -10,7 +10,8 @@ $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$lo
 if(mysqli_num_rows($check_user) > 0 ){
     header('Location: /profile.php');
 
-}else{
+}
+else{
     $_SESSION['message']= 'invalid username or password';
     header('Location: /index.php');
 }
